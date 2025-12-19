@@ -1,0 +1,143 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boot-project</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/css/bootstrap.min.css" integrity="sha512-2bBQCjcnw658Lho4nlXJcc6WkV/UxpE/sAokbXPxQNGqmNdQrWqtw26Ns9kFF/yG792pKR1Sx8/Y1Lf1XN4GKA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+<section class="main-menu bg-dark">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-6">
+            <a href="#" class="text-decoration-none fw-bold text-white fs-5">Rahat Hasan</a>
+            </div>
+             <div class="col-6">
+              <nav class="navbar navbar-expand-lg ">
+   
+    <div class="collapse navbar-collapse " id="navbarNav">
+      <ul class="navbar-nav ">
+        <li class="nav-item">
+          <a class="nav-link active text-white pe-4" aria-current="page" href="index.html">HOME</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white pe-4" href="about.html">ABOUT</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white pe-4" href="portfolio.html">PORTFOLIO</a>
+        </li>
+          <li class="nav-item">
+          <a class="nav-link text-white pe-4" href="service.html">SERVICES</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link text-white pe-4" href="contact.html">CONTACT</a>
+        </li>
+      </ul>
+    </div>
+  
+</nav>
+</div>
+        </div>
+    </div>
+</section>
+<section class="bg-dark-subtle text-center py-5">
+  <div class="container">
+    <h1 class="display-5 fw-bold">CONTACT</h1>
+    <p class="lead">
+      Essential information about common crops and their production time
+    </p>
+  </div>
+</section>
+
+<section class="contact">
+  <div class="container px-5 py-5">
+    <h3>Contact Form</h3>
+    <form id="contactForm" class="row g-3" novalidate>
+      <div class="col-md-6">
+        <label for="inputName" class="form-label">Name</label>
+        <input type="text" class="form-control" id="inputName" required>
+        <div class="invalid-feedback">Please enter your name.</div>
+      </div>
+      <div class="col-md-6">
+        <label for="inputEmail" class="form-label">Email</label>
+        <input type="email" class="form-control" id="inputEmail" required>
+        <div class="invalid-feedback">Please enter a valid email.</div>
+      </div>
+      <div class="col-12">
+        <label for="inputAddress" class="form-label">Address</label>
+        <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St" required>
+        <div class="invalid-feedback">Please enter your address.</div>
+      </div>
+      
+      <div class="col-md-6">
+        <label for="inputCity" class="form-label">City</label>
+        <input type="text" class="form-control" id="inputCity" required>
+        <div class="invalid-feedback">Please enter your city.</div>
+      </div>
+      <div class="col-md-4">
+        <label for="inputState" class="form-label">State</label>
+        <select id="inputState" class="form-select" required>
+          <option value="">Choose...</option>
+          <option>State 1</option>
+          <option>State 2</option>
+        </select>
+        <div class="invalid-feedback">Please select a state.</div>
+      </div>
+      <div class="col-md-2">
+        <label for="inputZip" class="form-label">Zip</label>
+        <input type="text" class="form-control" id="inputZip" required pattern="\d{4,10}">
+        <div class="invalid-feedback">Please enter a valid zip code.</div>
+      </div>
+      <div class="col-12">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="gridCheck" required>
+          <label class="form-check-label" for="gridCheck">
+            I agree to the terms
+          </label>
+          <div class="invalid-feedback">You must agree before submitting.</div>
+        </div>
+      </div>
+      <div class="col-12">
+        <button type="submit" class="btn btn-dark text-white">Submit</button>
+      </div>
+    </form>
+  </div>
+</section>
+
+
+
+   
+
+  <iframe 
+    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13647.998439666486!2d90.36530932137968!3d23.798706042989313!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1766049336406!5m2!1sen!2sbd" 
+    style="border:0; width:100%; height:400px;" 
+    allowfullscreen="" 
+    loading="lazy" 
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+
+
+
+
+ <section id="socket" class=" bg-dark text-center">
+    <div class="container">
+       
+       <section class="socket-section bg-dark py-2">
+  <div class="container text-center">
+    <p class="text-white mb-0">
+      © Copyright 2025 Portfolio, All Rights Reserved.
+      Web Design by Rahat Hasan. Current Date:
+      <span id="current-datetime" class="text-white fw-normal small"></span>
+    </p>
+  </div>
+</section>
+
+       
+
+<script src="contact.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/js/bootstrap.bundle.min.js" integrity="sha512-HvOjJrdwNpDbkGJIG2ZNqDlVqMo77qbs4Me4cah0HoDrfhrbA+8SBlZn1KrvAQw7cILLPFJvdwIgphzQmMm+Pw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+</html>

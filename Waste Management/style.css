@@ -1,0 +1,45 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.bg-home {
+  background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),
+  url('../images/bg.jpg') no-repeat center/cover;
+  height: 100vh;
+}
+
+.hero {
+  padding-top: 200px;
+}
+/* ===== Card Design ===== */
+.waste-card{
+  border: none;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: all .4s ease;
+  background: rgba(255,255,255,.85);
+  backdrop-filter: blur(6px);
+}
+
+/* Hover Animation */
+.waste-card:hover{
+  transform: translateY(-12px) scale(1.02);
+  box-shadow: 0 25px 45px rgba(0,128,0,.25);
+}
+
+/* Fixed Image Height */
+.waste-card img{
+  height: 220px;
+  object-fit: cover;
+}
+
+/* Title Style */
+.waste-card .card-title{
+  font-weight: 700;
+  color: #198754;
+}
+
+/* Floating effect spacing */
+.section-bg{
+  padding: 80px 0;
+}

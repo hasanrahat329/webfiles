@@ -1,0 +1,137 @@
+.logo-img {
+        max-height: 40px; 
+        width: auto;
+    }
+.navbar-nav .nav-link {
+    padding-left: 15px !important;  
+    padding-right: 15px !important;
+}
+.hero-section {
+    background-image: url("https://www.fertilux.lu/wp-content/uploads/2020/06/rendements-agricoles-1024x683.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 150px 20px; 
+    position: relative;
+}
+
+.hero-section::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:#000;
+    opacity: 0.5;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    background-color: #6e6b6b63;
+    padding: 15px;
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+  
+}
+
+.hero-content h1 {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.hero-content p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.socket-section{
+     background: #000;
+     text-align: center;
+     padding-top: 20px;
+     padding-bottom: 20px;
+}
+.socket-section p{
+     color: #fff;
+}
+.socket-section a{
+     color: #fff;
+     font-weight: 600;
+     text-decoration: none;
+}
+.subscribe .row{
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr 1fr;
+}
+.subscribe h1{
+    font-size: 20px;
+    color: #237040;
+}
+
+.subscribe a {
+    font-size: 15px;
+     text-decoration: none;
+     background: #237040;
+     color: #fff;
+     font-weight: 500;
+     text-transform: uppercase;
+     padding: 12px 20px;
+     display: inline-block;
+     border: 2px solid #fff;
+     border-radius: 10px;
+     margin-top: 20px;
+}
+
+.latest img{
+    width: 150px;
+}
+.latest .row2{
+    display: grid;
+    grid-template-columns: 1.5fr 2fr;
+}
+.image1 {
+    max-width: 100%;
+    height: 100%;
+}
+.image2{
+ 
+    height: 50% !important;
+}
+
+ 
+    .hero {
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+                  url('https://images.unsplash.com/photo-1501004318641-b39e6451bec6');
+      background-size: cover;
+      background-position: center;
+      color: white;
+    }
+
+    .card-small img { height: 160px; object-fit: cover; }
+    .card-medium img { height: 220px; object-fit: auto; }
+    .card-large img { height: 300px; object-fit: auto; }
+
+    .hero2 {
+      background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),
+      url('https://images.unsplash.com/photo-1511735643442-503bb3bd348a?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y3JvcHxlbnwwfHwwfHx8MA%3D%3D');
+      background-size: cover;
+      background-position: center;
+      color: white;
+    }
+    .crop-card img {
+      height: 150px;
+      object-fit: cover;
+    }
+ 
+    .hero3 {
+      background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),
+      url('https://images.unsplash.com/photo-1464226184884-fa280b87c399');
+      background-size: cover;
+      background-position: center;
+      color: white;
+    }
+    .guide-card img {
+      height: 200px;
+      object-fit: cover;
+    }
+ 

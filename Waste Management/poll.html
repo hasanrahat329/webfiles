@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Poll - Wi-Cycle</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success fixed-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html">Wi-Cycle</a>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="programs.html">Programs</a></li>
+        <li class="nav-item"><a class="nav-link" href="get-involved.html">Get Involved</a></li>
+        <li class="nav-item"><a class="nav-link" href="poll.html">Poll</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="container py-5 mt-5">
+<h2 class="text-success text-center pb-5">Waste Management Poll</h2>
+<h5 class="text-success"> What’s the Most Effective Way to Improve Waste Management in Our Community?</h5>
+<form class="mt-4">
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="poll">
+    <label>Increase Recycling Programs ♻️</label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="poll">
+    <label>Stricter Rules & Fines 🚫</label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="poll">
+    <label>Public Awareness Campaigns 📢</label>
+  </div>
+
+  <button class="btn btn-success mt-3">Vote</button>
+</form>
+
+<hr>
+
+<h4>💬 Comment Section</h4>
+<textarea id="comment" class="form-control"></textarea>
+<button onclick="addComment()" class="btn btn-outline-success mt-2">Post</button>
+
+<ul id="commentList" class="list-group mt-3"></ul>
+</div>
+
+
+
+<!-- ===== Cards Section ===== -->
+<section class="py-5">
+  <div class="container">
+    <div class="row g-4">
+
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body text-center">
+            <h5 class="card-title text-success">Reduce</h5>
+            <p class="card-text">
+              Reduce waste by minimizing unnecessary consumption.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body text-center">
+            <h5 class="card-title text-success">Reuse</h5>
+            <p class="card-text">
+              Reuse materials to extend their life cycle.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body text-center">
+            <h5 class="card-title text-success">Recycle</h5>
+            <p class="card-text">
+              Recycle waste to protect natural resources.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- Footer -->
+<footer class="bg-success text-white text-center py-3">
+© 2025 Wi-Cycle | Waste Free Bangladesh
+</footer>
+
+<script src="js/poll.js"></script>
+</body>
+</html>
