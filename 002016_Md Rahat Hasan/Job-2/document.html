@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liberation War</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/css/bootstrap.min.css" integrity="sha512-2bBQCjcnw658Lho4nlXJcc6WkV/UxpE/sAokbXPxQNGqmNdQrWqtw26Ns9kFF/yG792pKR1Sx8/Y1Lf1XN4GKA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <nav class="navbar navbar-expand-lg bg-danger">
+  <div class="container-fluid">
+
+    <img src="https://static.vecteezy.com/system/resources/previews/037/739/207/non_2x/bangladesh-liberation-war-victory-cheer-black-and-white-image-vector.jpg"
+         class="navbar-brand rounded-circle img-fluid logo-img" alt="logo">
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+      <div class="navbar-nav text-end">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="document.html">Documents</a>
+        <a class="nav-link" href="interview.html">Interviews</a>
+        <a class="nav-link" href="photograph.html">Photographs</a>
+        <a class="nav-link" href="contact.html">Contact</a>
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+
+
+
+
+
+
+<section class="py-5">
+<div class="container">
+
+<!-- Header -->
+<div class="text-center mb-4">
+  <h2 class="fw-bold">Historical Documents</h2>
+  <p class="text-muted">Browse documents of the Liberation War</p>
+</div>
+
+<!-- Filters -->
+<div class="row g-3 mb-4">
+  <div class="col-md-4">
+    <select id="typeFilter" class="form-select">
+      <option value="all">Filter by Type</option>
+      <option value="declaration">Declaration</option>
+      <option value="treaty">Treaty</option>
+      <option value="letter">Official Correspondence</option>
+    </select>
+  </div>
+  <div class="col-md-4">
+    <select id="dateFilter" class="form-select">
+      <option value="all">Filter by Date</option>
+      <option value="1971">1971</option>
+      <option value="1972">1972</option>
+    </select>
+  </div>
+  <div class="col-md-4">
+    <select id="relevanceFilter" class="form-select">
+      <option value="all">Filter by Relevance</option>
+      <option value="high">High</option>
+      <option value="medium">Medium</option>
+    </select>
+  </div>
+</div>
+
+<!-- Cards -->
+<div class="row g-4">
+
+<!-- ===== DECLARATIONS (4) ===== -->
+<div class="col-md-4 document" data-type="declaration" data-date="1971" data-relevance="high">
+<div class="card h-100"><div class="card-body">
+<span class="badge bg-primary">Declaration</span>
+<img src="https://albd.org/media/filer_public/3d/f3/3df3692e-5edf-4f8a-96a4-6d027866e996/declaration_of_independence_and_birth_of_bangladesh.jpeg" 
+               class="card-img-top" alt="Proclamation">
+<h5 class="mt-2">Declaration of Independence</h5>
+<p>Proclamation of Bangladesh independence.</p>
+<button class="btn btn-outline-danger btn-sm" data-bs-toggle="modal" data-bs-target="#m1">View Details</button>
+</div></div></div>
+
+<div class="col-md-4 document" data-type="declaration" data-date="1971" data-relevance="high">
+<div class="card h-100"><div class="card-body">
+<span class="badge bg-primary">Declaration</span>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Provisional_Government_of_BD_%282%29.jpg/1200px-Provisional_Government_of_BD_%282%29.jpg" 
+               class="card-img-top" alt="Proclamation">
+<h5 class="mt-2">Provisional Govt Declaration</h5>
+<p>Formation of provisional government.</p>
+<button class="btn btn-outline-danger btn-sm" data-bs-toggle="modal" data-bs-target="#m2">View Details</button>
+</div></div></div>
+
+<div class="col-md-4 document" data-type="declaration" data-date="1971" data-relevance="medium">
+<div class="card h-100"><div class="card-body">
+<span class="badge bg-primary">Declaration</span>
+<img src="https://albd.org/media/filer_public/5c/27/5c27ef42-cbfb-40d4-bef2-a989343d445a/op-24.jpeg" 
+               class="card-img-top" alt="Proclamation">
+<h5 class="mt-2">Mujib Nagar Declaration</h5>
+<p>Administrative declaration during war.</p>
+<button class="btn btn-outline-danger btn-sm" data-bs-toggle="modal" data-bs-target="#m3">View Details</button>
+</div></div></div>
+
+<div class="col-md-4 document" data-type="declaration" data-date="1971" data-relevance="medium">
+<div class="card h-100"><div class="card-body">
+<span class="badge bg-primary">Declaration</span>
+<img src="https://today.thefinancialexpress.com.bd/uploads/1689865222.jpg" 
+               class="card-img-top" alt="Proclamation">
+<h5 class="mt-2">Freedom Broadcast</h5>
+<p>Radio broadcast declaration.</p>
+<button class="btn btn-outline-danger btn-sm" data-bs-toggle="modal" data-bs-target="#m4">View Details</button>
+</div></div></div>
+
+<!-- ===== TREATIES (4) ===== -->
+<div class="col-md-4 document" data-type="treaty" data-date="1972" data-relevance="medium">
+<div class="card h-100"><div class="card-body">
+<span class="badge bg-success">Treaty</span>
+<img src="https://preview.redd.it/interview-with-a-bangladeshi-freedom-fighter-v0-lqa5kwzu6qge1.jpeg?auto=webp&s=ab248afb2d99e27be4a992daba657ea3163d64c2" 
+               class="card-img-top" alt="Proclamation">
+<h5 class="mt-2">Indo–Bangladesh Treaty of Friendship</h5>
+<p>Post-war diplomatic treaty.</p>
+<button class="btn btn-outline-danger btn-sm" data-bs-toggle="modal" data-bs-target="#m5">View Details</button>
+</div></div></div>
+
+<div class="col-md-4 document" data-type="treaty" data-date="1972" data-relevance="high">
+<div class="card h-100"><div class="card-body">
+<span class="badge bg-success">Treaty</span>
+<img src="https://preview.redd.it/interview-with-a-bangladeshi-freedom-fighter-v0-lqa5kwzu6qge1.jpeg?auto=webp&s=ab248afb2d99e27be4a992daba657ea3163d64c2" 
+               class="card-img-top" alt="Proclamation">
+<h5 class="mt-2">Simla Agreement</h5>
+<p>Regional peace agreement.</p>
+<button class="btn btn-outline-danger btn-sm" data-bs-toggle="modal" data-bs-target="#m6">View Details</button>
+</div></div></div>
+
+<div class="col-md-4 document" data-type="treaty" data-date="1972" data-relevance="medium">
+<div class="card h-100"><div class="card-body">
+<span class="badge bg-success">Treaty</span>
+<img src="https://preview.redd.it/interview-with-a-bangladeshi-freedom-fighter-v0-lqa5kwzu6qge1.jpeg?auto=webp&s=ab248afb2d99e27be4a992daba657ea3163d64c2" 
+               class="card-img-top" alt="Proclamation">
+<h5 class="mt-2">Trade Agreement</h5>
+<p>Trade relations agreement.</p>
+<button class="btn btn-outline-danger btn-sm" data-bs-toggle="modal" data-bs-target="#m7">View Details</button>
+</div></div></div>
+
+<div class="col-md-4 document" data-type="treaty" data-date="1972" data-relevance="medium">
+<div class="card h-100"><div class="card-body">
+<span class="badge bg-success">Treaty</span>
+<img src="https://preview.redd.it/interview-with-a-bangladeshi-freedom-fighter-v0-lqa5kwzu6qge1.jpeg?auto=webp&s=ab248afb2d99e27be4a992daba657ea3163d64c2" 
+               class="card-img-top" alt="Proclamation">
+<h5 class="mt-2">Border Agreement</h5>
+<p>Border and security agreement.</p>
+<button class="btn btn-outline-danger btn-sm" data-bs-toggle="modal" data-bs-target="#m8">View Details</button>
+</div></div></div>
+
+<!-- ===== LETTERS (4) ===== -->
+<div class="col-md-4 document" data-type="letter" data-date="1971" data-relevance="high">
+<div class="card h-100"><div class="card-body">
+<span class="badge bg-secondary">Letter</span>
+<img src="https://preview.redd.it/interview-with-a-bangladeshi-freedom-fighter-v0-lqa5kwzu6qge1.jpeg?auto=webp&s=ab248afb2d99e27be4a992daba657ea3163d64c2" 
+               class="card-img-top" alt="Proclamation">
+<h5 class="mt-2">Mujib’s Wartime Letters</h5>
+<p>Letters during the war.</p>
+<button class="btn btn-outline-danger btn-sm" data-bs-toggle="modal" data-bs-target="#m9">View Details</button>
+</div></div></div>
+
+<div class="col-md-4 document" data-type="letter" data-date="1971" data-relevance="medium">
+<div class="card h-100"><div class="card-body">
+<span class="badge bg-secondary">Letter</span>
+<img src="https://preview.redd.it/interview-with-a-bangladeshi-freedom-fighter-v0-lqa5kwzu6qge1.jpeg?auto=webp&s=ab248afb2d99e27be4a992daba657ea3163d64c2" 
+               class="card-img-top" alt="Proclamation">
+<h5 class="mt-2">Freedom Fighter Letters</h5>
+<p>Letters from freedom fighters.</p>
+<button class="btn btn-outline-danger btn-sm" data-bs-toggle="modal" data-bs-target="#m10">View Details</button>
+</div></div></div>
+
+<div class="col-md-4 document" data-type="letter" data-date="1971" data-relevance="medium">
+<div class="card h-100"><div class="card-body">
+<span class="badge bg-secondary">Letter</span>
+<img src="https://preview.redd.it/interview-with-a-bangladeshi-freedom-fighter-v0-lqa5kwzu6qge1.jpeg?auto=webp&s=ab248afb2d99e27be4a992daba657ea3163d64c2" 
+               class="card-img-top" alt="Proclamation">
+<h5 class="mt-2">Govt Circular Letters</h5>
+<p>Official war-time circulars.</p>
+<button class="btn btn-outline-danger btn-sm" data-bs-toggle="modal" data-bs-target="#m11">View Details</button>
+</div></div></div>
+
+<div class="col-md-4 document" data-type="letter" data-date="1971" data-relevance="high">
+<div class="card h-100"><div class="card-body">
+<span class="badge bg-secondary">Letter</span>
+<img src="https://preview.redd.it/interview-with-a-bangladeshi-freedom-fighter-v0-lqa5kwzu6qge1.jpeg?auto=webp&s=ab248afb2d99e27be4a992daba657ea3163d64c2" 
+               class="card-img-top" alt="Proclamation">
+<h5 class="mt-2">International Appeals</h5>
+<p>Letters sent to world leaders.</p>
+<button class="btn btn-outline-danger btn-sm" data-bs-toggle="modal" data-bs-target="#m12">View Details</button>
+</div></div></div>
+
+</div>
+</div>
+</section>
+
+<!-- MODALS (1 example, others similar title-based) -->
+<!-- m1 -->
+<div class="modal fade" id="m1">
+<div class="modal-dialog modal-lg modal-dialog-centered">
+<div class="modal-content">
+<div class="modal-header">
+<h5>Declaration of Independence</h5>
+<button class="btn-close" data-bs-dismiss="modal"></button>
+</div>
+<div class="modal-body">
+<p>Official proclamation declaring the independence of Bangladesh.</p>
+<p><strong>Publication Date:</strong> 26 March 1971</p>
+<p><strong>Issued By:</strong> Provisional Government of Bangladesh</p>
+<p><strong>Source:</strong> National Archives of Bangladesh</p>
+</div>
+</div>
+</div>
+</div>
+
+<!-- m2 -->
+<div class="modal fade" id="m2">
+<div class="modal-dialog modal-lg modal-dialog-centered">
+<div class="modal-content">
+<div class="modal-header">
+<h5>Provisional Government Declaration</h5>
+<button class="btn-close" data-bs-dismiss="modal"></button>
+</div>
+<div class="modal-body">
+<p>Declaration announcing the formation of the Provisional Government.</p>
+<p><strong>Publication Date:</strong> April 1971</p>
+<p><strong>Issued By:</strong> Mujibnagar Government</p>
+<p><strong>Source:</strong> Liberation War Documents</p>
+</div>
+</div>
+</div>
+</div>
+
+<!-- m3 -->
+<div class="modal fade" id="m3">
+<div class="modal-dialog modal-lg modal-dialog-centered">
+<div class="modal-content">
+<div class="modal-header">
+<h5>Mujibnagar Declaration</h5>
+<button class="btn-close" data-bs-dismiss="modal"></button>
+</div>
+<div class="modal-body">
+<p>Administrative declaration issued from Mujibnagar during the war.</p>
+<p><strong>Publication Date:</strong> 1971</p>
+<p><strong>Issued By:</strong> Provisional Government</p>
+<p><strong>Source:</strong> Bangladesh National Archives</p>
+</div>
+</div>
+</div>
+</div>
+
+<!-- m4 -->
+<div class="modal fade" id="m4">
+<div class="modal-dialog modal-lg modal-dialog-centered">
+<div class="modal-content">
+<div class="modal-header">
+<h5>Freedom Broadcast Declaration</h5>
+<button class="btn-close" data-bs-dismiss="modal"></button>
+</div>
+<div class="modal-body">
+<p>Declaration broadcast through radio to inspire the nation.</p>
+<p><strong>Publication Date:</strong> March 1971</p>
+<p><strong>Broadcast By:</strong> Swadhin Bangla Betar Kendra</p>
+<p><strong>Source:</strong> Broadcast Archives</p>
+</div>
+</div>
+</div>
+</div>
+
+<!-- m5 -->
+<div class="modal fade" id="m5">
+<div class="modal-dialog modal-lg modal-dialog-centered">
+<div class="modal-content">
+<div class="modal-header">
+<h5>Indo–Bangladesh Treaty of Friendship</h5>
+<button class="btn-close" data-bs-dismiss="modal"></button>
+</div>
+<div class="modal-body">
+<p>A formal treaty establishing diplomatic relations between India and newly independent Bangladesh following the Liberation War.</p>
+<p><strong>Publication Date:</strong> 1972</p>
+<p><strong>Signed By:</strong> Governments of India & Bangladesh</p>
+<p><strong>Source:</strong> Ministry of Foreign Affairs</p>
+</div>
+</div>
+</div>
+</div>
+
+<!-- m6 -->
+<div class="modal fade" id="m6">
+<div class="modal-dialog modal-lg modal-dialog-centered">
+<div class="modal-content">
+<div class="modal-header">
+<h5>Simla Agreement</h5>
+<button class="btn-close" data-bs-dismiss="modal"></button>
+</div>
+<div class="modal-body">
+<p>Agreement ensuring peace and stability in South Asia.</p>
+<p><strong>Publication Date:</strong> 1972</p>
+<p><strong>Signed By:</strong> India & Pakistan</p>
+<p><strong>Source:</strong> International Treaty Records</p>
+</div>
+</div>
+</div>
+</div>
+
+<!-- m7 -->
+<div class="modal fade" id="m7">
+<div class="modal-dialog modal-lg modal-dialog-centered">
+<div class="modal-content">
+<div class="modal-header">
+<h5>Trade Agreement</h5>
+<button class="btn-close" data-bs-dismiss="modal"></button>
+</div>
+<div class="modal-body">
+<p>Agreement defining trade relations after independence.</p>
+<p><strong>Publication Date:</strong> 1972</p>
+<p><strong>Signed By:</strong> Bangladesh Government</p>
+<p><strong>Source:</strong> Ministry of Commerce</p>
+</div>
+</div>
+</div>
+</div>
+
+<!-- m8 -->
+<div class="modal fade" id="m8">
+<div class="modal-dialog modal-lg modal-dialog-centered">
+<div class="modal-content">
+<div class="modal-header">
+<h5>Border Agreement</h5>
+<button class="btn-close" data-bs-dismiss="modal"></button>
+</div>
+<div class="modal-body">
+<p>Agreement on border security and management.</p>
+<p><strong>Publication Date:</strong> 1972</p>
+<p><strong>Signed By:</strong> Bangladesh & India</p>
+<p><strong>Source:</strong> Border Affairs Archive</p>
+</div>
+</div>
+</div>
+</div>
+
+<!-- m9 -->
+<div class="modal fade" id="m9">
+<div class="modal-dialog modal-lg modal-dialog-centered">
+<div class="modal-content">
+<div class="modal-header">
+<h5>Mujib’s Wartime Letters</h5>
+<button class="btn-close" data-bs-dismiss="modal"></button>
+</div>
+<div class="modal-body">
+<p>Letters written by Bangabandhu Sheikh Mujibur Rahman during the war.</p>
+<p><strong>Publication Date:</strong> 1971</p>
+<p><strong>Author:</strong> Sheikh Mujibur Rahman</p>
+<p><strong>Source:</strong> Bangabandhu Memorial Trust</p>
+</div>
+</div>
+</div>
+</div>
+
+<!-- m10 -->
+<div class="modal fade" id="m10">
+<div class="modal-dialog modal-lg modal-dialog-centered">
+<div class="modal-content">
+<div class="modal-header">
+<h5>Freedom Fighter Letters</h5>
+<button class="btn-close" data-bs-dismiss="modal"></button>
+</div>
+<div class="modal-body">
+<p>Letters written by freedom fighters from the battlefield.</p>
+<p><strong>Publication Date:</strong> 1971</p>
+<p><strong>Authors:</strong> Freedom Fighters</p>
+<p><strong>Source:</strong> Liberation War Museum</p>
+</div>
+</div>
+</div>
+</div>
+
+<!-- m11 -->
+<div class="modal fade" id="m11">
+<div class="modal-dialog modal-lg modal-dialog-centered">
+<div class="modal-content">
+<div class="modal-header">
+<h5>Government Circular Letters</h5>
+<button class="btn-close" data-bs-dismiss="modal"></button>
+</div>
+<div class="modal-body">
+<p>Official circular letters issued during wartime.</p>
+<p><strong>Publication Date:</strong> 1971</p>
+<p><strong>Issued By:</strong> Provisional Government</p>
+<p><strong>Source:</strong> Government Records</p>
+</div>
+</div>
+</div>
+</div>
+
+<!-- m12 -->
+<div class="modal fade" id="m12">
+<div class="modal-dialog modal-lg modal-dialog-centered">
+<div class="modal-content">
+<div class="modal-header">
+<h5>International Appeals</h5>
+<button class="btn-close" data-bs-dismiss="modal"></button>
+</div>
+<div class="modal-body">
+<p>Appeal letters sent to international leaders seeking support.</p>
+<p><strong>Publication Date:</strong> 1971</p>
+<p><strong>Issued By:</strong> Bangladesh Government-in-Exile</p>
+<p><strong>Source:</strong> International Archives</p>
+</div>
+</div>
+</div>
+</div>
+
+
+</body>
+</html>
+
+
+  <section class="socket-section">
+        <div class="container">
+    <p><a href="#"><i class="fa-regular fa-copyright"></i></a>Copyright 2018 <a href="#">Liberation War</a>, All rights Reserved.Web Design by Rahat Hasan</p>
+       </div>
+
+     </section>
+
+<script src="script.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/js/bootstrap.bundle.min.js" integrity="sha512-HvOjJrdwNpDbkGJIG2ZNqDlVqMo77qbs4Me4cah0HoDrfhrbA+8SBlZn1KrvAQw7cILLPFJvdwIgphzQmMm+Pw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+</html>

@@ -1,0 +1,115 @@
+.logo-img {
+        max-height: 40px; 
+        width: auto;
+    }
+
+
+.introduction img{
+    height: 500px; object-fit: cover;
+}
+.socket-section{
+     background: #000;
+     text-align: center;
+     padding-top: 20px;
+     padding-bottom: 20px;
+}
+.socket-section p{
+     color: #fff;
+}
+.socket-section a{
+     color: #fff;
+     font-weight: 600;
+     text-decoration: none;
+}
+.subscribe .row{
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr 1fr;
+}
+.subscribe h1{
+    font-size: 20px;
+    color: #237040;
+}
+
+.subscribe a {
+    font-size: 15px;
+     text-decoration: none;
+     background: #dc3545;
+     color: #fff;
+     font-weight: 500;
+     text-transform: uppercase;
+     padding: 12px 20px;
+     display: inline-block;
+     border: 2px solid #fff;
+     border-radius: 10px;
+     margin-top: 20px;
+}
+.latest img{
+    width: 150px;
+}
+.latest .row2{
+    display: grid;
+    grid-template-columns: 1.5fr 2fr;
+}
+.image1 {
+    max-width: 100%;
+    height: 100%;
+}
+.image2{
+ 
+    height: 50% !important;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    background-color: #6e6b6b63;
+    padding: 15px;
+    backdrop-filter: blur(2px);
+    border-radius: 10px;
+  
+}
+.hero-section::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:#000;
+    opacity: 0.5;
+}
+
+
+
+.text-danger-light{
+    color:#f5c6cb !important;
+}
+.fighter-img {
+                width: 150px;     
+                height: 150px;    
+                object-fit: cover; 
+                border-radius: 50%; 
+                margin: 0 auto;
+                align-items: center;  
+              }
+
+.gallery img{
+     height: 180px;
+}
+.interview-img{
+  width:120px;
+  height:120px;
+  object-fit:cover;
+  border-radius:50%;
+  border:3px solid #dc3545;
+}
+.gallery-img{
+  width:100%;
+  height:230px;
+  object-fit:cover;
+  cursor:pointer;
+  transition:0.3s;
+}
+.gallery-img:hover{
+  transform:scale(1.03);
+}
