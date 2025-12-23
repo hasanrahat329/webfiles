@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>My First Web Page</h1>
+<p>My First Paragraph</p>
+  <button type="button" onclick="startTime()">
+Display Live Date and Time
+</button>
+
+<h1 id="demo1"> MD Rahat Hasan</h1>
+
+
+<p id="demo1">Change the style of an HTML element.</p>
+
+
+<p id="demo2">Font size changing text</p>
+
+<script>
+
+
+let size = 12;      // starting font size
+let maxSize = 40;  // maximum font size
+
+setInterval(function () {
+  document.getElementById("demo2").style.fontSize = size + "px";
+  size++;
+
+  if (size > maxSize) {
+    size = 12; // আবার ছোট থেকে শুরু
+  }
+}, 200);
+
+
+  let colors = ["red", "blue", "green", "purple", "orange", "pink"];
+let i = 0;
+
+setInterval(function () {
+  document.getElementById("demo1").style.color = colors[i];
+  i++;
+
+  if (i >= colors.length) {
+    i = 0;
+  }
+}, 1000);
+
+
+console.log("Rahat Hasan Farabi");
+window.alert("Code Invalid");
+function startTime() {
+  setInterval(function () {
+    document.getElementById("demo").innerText = new Date().toLocaleString();
+  }, 1000);
+}
+document.getElementById("demo").innerText = "Hello World";
+document.getElementById("demo").innerHTML = "<h2>Hello World</h2>";
+
+</script>
+
+</body>
+</html>
