@@ -1,150 +1,160 @@
-<!DOCTYPE html>
+
+
+
+    <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Liberation War</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/css/bootstrap.min.css" integrity="sha512-2bBQCjcnw658Lho4nlXJcc6WkV/UxpE/sAokbXPxQNGqmNdQrWqtw26Ns9kFF/yG792pKR1Sx8/Y1Lf1XN4GKA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-   <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Liberation War | Contact</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/css/bootstrap.min.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<section class="main-menu bg-danger">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-4">
-           <img src="https://static.vecteezy.com/system/resources/previews/037/739/207/non_2x/bangladesh-liberation-war-victory-cheer-black-and-white-image-vector.jpg" alt="" class="rounded-circle img-fluid logo-img">
-          
-            </div>
-             <div class="col-8">
-              <nav class="navbar navbar-expand-lg ">
-   
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ">
-         
-          <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-        </li>
-          <li class="nav-item">
-          <a class="nav-link" href="Document.html">Documents</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="interview.html">Interviews</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="photograph.html">Photographs</a>
-        </li>
-          <li class="nav-item">
-          <a class="nav-link" href="contact.html">Contact</a>
-        </li>
-      </ul>
+
+<!-- NAVBAR -->
+   <nav class="navbar navbar-expand-lg bg-danger">
+  <div class="container-fluid">
+
+    <img src="https://static.vecteezy.com/system/resources/previews/037/739/207/non_2x/bangladesh-liberation-war-victory-cheer-black-and-white-image-vector.jpg"
+         class="navbar-brand rounded-circle img-fluid logo-img" alt="logo">
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+      <div class="navbar-nav text-end">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="document.html">Documents</a>
+        <a class="nav-link" href="interview.html">Interviews</a>
+        <a class="nav-link" href="photograph.html">Photographs</a>
+        <a class="nav-link" href="contact.html">Contact</a>
+      </div>
     </div>
-  
+
+  </div>
 </nav>
-</div>
+
+
+<!-- CONTACT SECTION -->
+<section class="contact-section py-5">
+    <div class="container">
+        <h2 class="text-center text-danger fw-bold mb-5">Contact Us</h2>
+
+        <div class="row g-4">
+
+            <!-- FORM -->
+            <div class="col-lg-6">
+                <div class="card shadow-sm p-4">
+                    <h4 class="mb-4">Send Us a Message</h4>
+
+                    <form class="needs-validation" novalidate>
+
+                        <!-- Name -->
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name *</label>
+                            <input type="text" id="name" name="name"
+                                   class="form-control"
+                                   required minlength="3">
+                            <div class="invalid-feedback">
+                                Name must be at least 3 characters.
+                            </div>
+                        </div>
+
+                        <!-- Email -->
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email *</label>
+                            <input type="email" id="email" name="email"
+                                   class="form-control"
+                                   required>
+                            <div class="invalid-feedback">
+                                Please enter a valid email address.
+                            </div>
+                        </div>
+
+                        <!-- Message -->
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message *</label>
+                            <textarea id="message" name="message"
+                                      class="form-control"
+                                      rows="5" required minlength="10"></textarea>
+                            <div class="invalid-feedback">
+                                Message must be at least 10 characters.
+                            </div>
+                        </div>
+
+                        <!-- File -->
+                        <div class="mb-3">
+                            <label for="file" class="form-label">Upload File (Optional)</label>
+                            <input type="file" id="file" name="file"
+                                   class="form-control"
+                                   accept=".pdf,.jpg,.jpeg,.png">
+                        </div>
+
+                        <!-- Submit -->
+                        <button type="submit" class="btn btn-danger w-100">
+                            Submit
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- INFO -->
+            <div class="col-lg-6">
+                <div class="card shadow-sm p-4">
+                    <h4 class="mb-4">Contact Information</h4>
+                    <p><strong>Address:</strong> 123 Liberation Street, Dhaka</p>
+                    <p><strong>Email:</strong> info@liberationwararchive.org</p>
+                    <p><strong>Phone:</strong> +880 1234 567890</p>
+                </div>
+            </div>
+
         </div>
     </div>
 </section>
 
-<section class="contact ">
-        <div class="row">
-            <div class="col-6 ps-5">
-                  <h1 class="text-success py-3">Contact Form</h1>
-            <form class="pb-3">
-  <div class="mb-3">
-    <div class="row">
-        <div class="col-6">
-      <div class="mb-3">
-    <label for="exampleInputPassword1" class="form-label">Full Name</label>
-    <input type="password" class="form-control" id="exampleInputPassword1">
-  </div>
-  </div>
-  <div class="col-6">
-    <div class="mb-3">
-    <label for="exampleInputPassword1" class="form-label">Full Address</label>
-    <input type="password" class="form-control" id="exampleInputPassword1">
-  </div>
-  </div>
-  </div>
-    <label for="exampleInputEmail1" class="form-label">Email address</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-  </div>
-  <div class="pb-3"><input type="file"></div>
-  <div class="mb-3 form-check ">
-    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-    <label class="form-check-label" for="exampleCheck1">Check me out</label>
-  </div>
-  <button type="submit" class="btn btn-success">Submit</button>
-</form>
-            </div>
-             <div class="col-6">
- <img class="image1" src="https://mir-s3-cdn-cf.behance.net/projects/404/b69b7b186895321.Y3JvcCwxMzgwLDEwODAsMjcwLDA.jpg" alt="">
-             </div>
-        </div>
+<!-- FOOTER -->
+<section class="socket-section bg-light py-3">
+    <div class="container text-center">
+        <p class="mb-0">
+            <i class="fa-regular fa-copyright"></i>
+            2018 <a href="#">Liberation War</a>.
+            All rights reserved. <br>
+            Web Design by <strong>Rahat Hasan</strong>
+        </p>
+    </div>
 </section>
 
+<!-- Bootstrap JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/js/bootstrap.bundle.min.js"></script>
 
+<!-- Validation Script -->
+<script>
+(() => {
+    'use strict';
 
+    const forms = document.querySelectorAll('.needs-validation');
 
+    Array.from(forms).forEach(form => {
+        form.addEventListener('submit', event => {
+            if (!form.checkValidity()) {
+                event.preventDefault();
+                event.stopPropagation();
+            }
+            form.classList.add('was-validated');
+        }, false);
+    });
+})();
+</script>
 
-<section class="subscribe py-5 bg-danger-subtle">
-            <div class="container">
-                <div class="row">
-                    <div class="column">
-                        <h1>Contact Us</h1>
-                        <p>PO Box 16122 Collins Street West, <br>
-Victoria 8007 Australia <br>
-Alitstudios@gmai.com <br> +61 3 8376 6284</p>
-<img src="Image/WhatsApp Image 2025-11-26 at 1.45.37 PM.jpeg" alt="">
-                    </div>
-                     <div class="column">
-                        <h1>Useful Links</h1>
-                        <p>About Us <br>
-                            Advertise
-<br>Terms & Conditions <br>
-Privacy Policy <br>
-
-Careers <br>
-Shop</p>
-                    </div>
-                     <div class="latest">
-                        <h1>Lastest News</h1>
-                       <div class="row2">
-                        <div class="column">
-                            <img src="https://vodenglish.news/wp-content/uploads/2022/07/signal-2022-07-05-045019_002.jpeg" alt="">
-                        </div>
-                        <div class="column">
-                            <p>Bauhaus Museum Dessau Beginning Construction with Foundation Stone Ceremony</p>
-                        </div>
-                        </div>
-                        <div class="row2">
-                        <div class="column">
-                            <img src="https://framerusercontent.com/images/xHR4o6vMEMOPtOAEghHBOKQPE3I.jpeg?width=1500&height=844" alt="">
-                        </div>
-                        <div class="column">
-                            <p>Bauhaus Museum Dessau Beginning Construction with Foundation Stone Ceremony</p>
-                        </div>
-                       </div>
-                   
-                </div>
-                  <div class="column">
-                        <h1>Subscribe</h1>
-                        <p>Subscribe to our weekly newsletter to receive the lastest freebies in your inbox</p>
-                        <a href="#">Your Email Address</a>
-                        <a href="#">Subscribe</a>
-                    </div>
-            </div>
-        </section>
-
-  <section class="socket-section">
-        <div class="container">
-    <p><a href="#"><i class="fa-regular fa-copyright"></i></a>Copyright 2018 <a href="#">Liberation War</a>, All rights Reserved.Web Design by Rahat Hasan</p>
-       </div>
-
-     </section>
-
-
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/js/bootstrap.bundle.min.js" integrity="sha512-HvOjJrdwNpDbkGJIG2ZNqDlVqMo77qbs4Me4cah0HoDrfhrbA+8SBlZn1KrvAQw7cILLPFJvdwIgphzQmMm+Pw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
 </html>
